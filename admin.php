@@ -1,5 +1,5 @@
 <?php
-include .env.php;
+include '.env.php';
 
 echo "<HTML><HEAD><TITLE>MotoGP Admin</TITLE>
     <link rel='shortcut icon' type='image/gif' href='images/meeple.gif'></link>

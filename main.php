@@ -9,7 +9,7 @@
 </HEAD>
 
 <?php
-include .env.php;
+include '.env.php';
 
 date_default_timezone_set('UTC');
 $racetime = date('d-F-Y');
