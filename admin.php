@@ -20,7 +20,7 @@ if ($state == 0){
 } else {
 
 // **Create connection**
-$db = new mysqli($host, $user, $password, $db_name);
+$db = new mysqli($host, $username, $password, $db_name);
 // Always check for errors
 if($db->connect_errno){
     echo "Members Connection bloody failed: " . $db->connect_error . "<BR>";
@@ -72,7 +72,7 @@ switch ($state) {
                                 echo "Error updating user balance: " . $db->error."<BR>";
                             }
                         }else{
-                        "DB balance connection failed: " . $db->connect_error . "<BR>";
+                        "DB balance query failed: " . $db->connect_error . "<BR>";
                         }
                         
                     }  

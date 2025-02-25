@@ -41,7 +41,7 @@ $result = $db->query("SELECT password, username, email, balance FROM members WHE
 
 // Always check for errors
 if($db->connect_errno){
-    echo "Database Connection failed: " . $db->connect_error . "<BR>";
+    echo "Database query failed: " . $db->connect_error . "<BR>";
 }
 
 //close db conection
