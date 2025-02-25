@@ -28,7 +28,7 @@ if($myusername == 'admin'){
 }
 
 // Create connection
-$db = new mysqli($host, $username, $password, $db_name);
+$db = new mysqli($host, $user, $password, $db_name);
 
 // Check for errors
 if($db->connect_errno){
