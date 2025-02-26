@@ -28,7 +28,7 @@ if($myusername == 'admin'){
 }
 
 // Create connection
-$db = new mysqli($host, $username, $password, $db_name);
+$db = new mysqli($host, $user, $password, $db_name);
 
 // Check for errors
 if($db->connect_errno){
@@ -41,7 +41,7 @@ $result = $db->query("SELECT password, username, email, balance FROM members WHE
 
 // Always check for errors
 if($db->connect_errno){
-    echo "Database Connection failed: " . $db->connect_error . "<BR>";
+    echo "Database query failed: " . $db->connect_error . "<BR>";
 }
 
 //close db conection

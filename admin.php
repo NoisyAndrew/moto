@@ -4,7 +4,8 @@ include '.env.php';
 echo "<HTML><HEAD><TITLE>MotoGP Admin</TITLE>
     <link rel='shortcut icon' type='image/gif' href='images/meeple.gif'></link>
     <LINK REL='STYLESHEET' HREF='/styles/main.css' TYPE='text/css' MEDIA='screen'></link>
-    </HEAD> <h2> Admin Screen</h2></html>";
+    </HEAD> 
+    <center><h2> Admin Screen</h2></center>";
 
 //get post variables
 $state=$_POST['state'];
@@ -28,7 +29,7 @@ if($db->connect_errno){
 
 
 
-echo "<H1>Entry state is - ". $state."</H1>";
+echo "<center><H2>Entry state is - ". $state."</H2></center>";
 
 //get rider list
 $rider_names=file('rider-list.txt');
@@ -72,7 +73,7 @@ switch ($state) {
                                 echo "Error updating user balance: " . $db->error."<BR>";
                             }
                         }else{
-                        "DB balance connection failed: " . $db->connect_error . "<BR>";
+                        "DB balance query failed: " . $db->connect_error . "<BR>";
                         }
                         
                     }  
@@ -189,16 +190,16 @@ switch ($state) {
 }
 
 //Proccess bids
-echo "<HR><H2>Proccess The Bids</H2>
-     <center> clicking here creates a winning bid file that can be posted to the fron page.";
+echo "<center><HR><H2>Proccess The Bids</H2>
+      clicking here creates a winning bid file that can be posted to the fron page.";
 echo "<form method='post' action='admin.php'>";
 echo "<input name='state' type='hidden' value= '1'>
       <input type='submit' value='CLICK to post bids'>
       </form></center><HR>"; 
 
 //Clear bid table
-echo "<H2>Clear The Bid Table</H2>
-     <center>Remember to clear the bids each round";
+echo "<center><H2>Clear The Bid Table</H2>
+     Remember to clear the bids each round";
 echo "<form method='post' action='admin.php'>";
 echo "<input name='state' type='hidden' value= '4'>
       <input type='submit' value='CLICK to clear'>
@@ -206,9 +207,8 @@ echo "<input name='state' type='hidden' value= '4'>
 
 //Enter Race results
 echo "<form method='post' action='admin.php'>";
-echo "<H2>Final Rider Race Positions</H2>
-     <center>";
-     
+echo "<center><H2>Final Rider Race Positions</H2>";
+          
 for ($pos = 1; $pos <= 8; $pos++){
     $fplace = 'place'.$pos;
     echo "Finishing Place ".$pos."<BR>";    
@@ -223,8 +223,8 @@ echo "<input name='state' type='hidden' value= '3'>
         </form></center><HR>";
 
 //Add a new player
-echo "<H2>Add A New Player</H2>
-     <center>You can add a new player here and send them a confirmation email";
+echo "<center><H2>Add A New Player</H2>
+     You can add a new player here and send them a confirmation email";
 echo "<form method='post' action='admin.php'>";
 echo "<input name='new_player' type='text' value= 'name' style='width: 150px'><BR>
       <input name='new_password' type='text' value= 'password' style='width: 150px'><BR>
@@ -233,8 +233,8 @@ echo "<input name='state' type='hidden' value= '2'>
       <input type='submit' value='Enter New Player'>
       </form></center><HR>";
 //Reset a password
-echo "<H2>Reset a players password</H2>
-     <center>Enter the players name and new password";
+echo "<center><H2>Reset a players password</H2>
+     Enter the players name and new password";
 echo "<form method='post' action='admin.php'>";
 echo "<input name='player' type='text' value= 'player name' style='width: 150px'><BR>
       <input name='new_password' type='text' value= 'new password' style='width: 150px'><BR>";
@@ -245,8 +245,8 @@ echo "<input name='state' type='hidden' value= '7'>
 
 //Clear comments box
 echo "<form method='post' action='admin.php'>";
-echo "<H2>Clear The Comments</H2>
-     <center> Clicking here will reset the comments box<BR> and add content to the news/message box<BR>
+echo "<center><H2>Clear The Comments</H2>
+    Clicking here will reset the comments box<BR> and add content to the news/message box<BR>
      <textarea name='message_text' rows='8' cols='50'>    
     </textarea><BR>";
 echo "<input name='state' type='hidden' value= '6'>
@@ -255,5 +255,5 @@ echo "<input name='state' type='hidden' value= '6'>
 
 $db->close();
 }
-echo "<P><BR><BR><center>end admin code..<center>";
+echo "<P><BR><BR><center>end admin code..<center> </HTML>";
 ?>

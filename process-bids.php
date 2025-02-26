@@ -1,6 +1,8 @@
 <?php
 include '.env.php';
 
+//tyesting sftp
+
 // POST variables
 //$username = $_POST["member"];
 //$useremail = $_POST["email"];
@@ -46,6 +48,11 @@ foreach ($raceday as $race){
 // if bids are OK save the bids and report back
 if($bidsok == 0){
     // calculate new balance and see if they can aford it.
+
+    //looking for balance errors
+    echo "userbalance ".$userbalance."<br>amount 1 ".$amount_1."<br>amount 2 ".$amount_2."<br>amount 3 ".$amount_3."<br>";
+
+
     $newuserbalance = $userbalance - $amount_1 - $amount_2 - $amount_3;
     if ($newuserbalance>'-1'){
     // Execute SQL queries.
