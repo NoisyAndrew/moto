@@ -1,5 +1,5 @@
 Table members {
-    member_id integer
+    member_id integer pk
     username varchar
     password varchar
     email varchar
@@ -9,7 +9,7 @@ Table members {
 }
 
 Table riders {
-    rider_id integer
+    rider_id integer pk
     name varchar
     active boolean
 
@@ -17,7 +17,7 @@ Table riders {
 }
 
 Table events {
-    event_id integer
+    event_id integer pk
     name varchar
     date date
 
@@ -25,7 +25,7 @@ Table events {
 }
 
 Table bids {
-    bid_id integer
+    bid_id integer pk
     member_id integer
     rider_id integer
     event_id integer
