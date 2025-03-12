@@ -15,7 +15,7 @@ CREATE TABLE riders (
 CREATE TABLE events (
   event_id integer PRIMARY KEY,
   name varchar(255),
-  date date
+  start_date date
 );
 
 CREATE TABLE bids (
