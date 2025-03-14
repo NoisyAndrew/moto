@@ -4,7 +4,10 @@ select * from members;
 select * from events;
 select * from bids;
 
-/* join data */
+/* active riders */ 
+select * from riders where active;
+
+/* bids with descriptive data from joins */
 select b.bid_id, m.username, r.name, e.name, amount
 from bids b
 join members m on b.member_id = m.member_id

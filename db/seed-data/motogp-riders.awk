@@ -8,12 +8,22 @@ BEGIN {
     name = ""
 }
 
+# start of MotoGP rider list
+/rider-grid__motogp/ {
+    motogp = 1
+}
+
+# end of MotoGP rider list
+/rider-grid__moto2/ {
+    motogp = 0
+}
+
 /<div class="rider-list__info-name">/ {
     rider = 1
 }
 
 /<span>/ {
-    if (rider) {
+    if (rider && motogp) {
         sub(/.*<span>[ \t]*/, "") # remove everything up to and including the span tag and leading whitespace
         sub(/[ \t]*<\/span>.*/, "") # remove everything after and including the span tag and trailing whitespace
 
@@ -34,7 +44,7 @@ BEGIN {
 }
 
 /<\/div>/ {
-    if (rider) {
+    if (rider && motogp) {
         if (first) {
             first = 0
         } else {
