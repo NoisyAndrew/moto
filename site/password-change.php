@@ -1,7 +1,7 @@
 <?php
 echo "<HTML><HEAD><TITLE>MotoGP bidding 2018</TITLE>
     <link rel='shortcut icon' type='image/gif' href='images/meeple.gif'></link>
-    <LINK REL='STYLESHEET' HREF='/styles/main.css' TYPE='text/css' MEDIA='screen'></link>
+    <LINK REL='STYLESHEET' HREF='/css/main.css' TYPE='text/css' MEDIA='screen'></link>
     </HEAD>";
 
 // username and password sent from form 

@@ -1,7 +1,7 @@
 <?php
 echo "<HTML><HEAD><TITLE>MotoGP Admin</TITLE>
     <link rel='shortcut icon' type='image/x-icon' href='cog.ico'></link>
-    <LINK REL='STYLESHEET' HREF='/styles/main.css' TYPE='text/css' MEDIA='screen'></link>
+    <LINK REL='STYLESHEET' HREF='/css/main.css' TYPE='text/css' MEDIA='screen'></link>
     </HEAD> <h2> Welcome to the admin login</h2>";
 
 echo "<form name='form1' method='post' action='main.php'>

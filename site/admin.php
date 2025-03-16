@@ -3,7 +3,7 @@ include '.env.php';
 
 echo "<HTML><HEAD><TITLE>MotoGP Admin</TITLE>
     <link rel='shortcut icon' type='image/gif' href='images/meeple.gif'></link>
-    <LINK REL='STYLESHEET' HREF='/styles/main.css' TYPE='text/css' MEDIA='screen'></link>
+    <LINK REL='STYLESHEET' HREF='/css/main.css' TYPE='text/css' MEDIA='screen'></link>
     </HEAD> 
     <center><h2> Admin Screen</h2></center>";
 

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <HTML><HEAD><TITLE>MotoGP bidding 2025</TITLE>
 <link rel='shortcut icon' type='image/x-icon' href='cog.ico'></link>
-<LINK REL='STYLESHEET' HREF='main.css' TYPE='text/css' MEDIA='screen'></link> 
+<LINK REL='STYLESHEET' HREF='/css/main.css' TYPE='text/css' MEDIA='screen'></link> 
 <meta http-equiv='pragma' content='no-cache' />  
 <meta http-equiv='expires' content='-1' />
 <meta http-equiv='CACHE-CONTROL' content='NO-CACHE'>
