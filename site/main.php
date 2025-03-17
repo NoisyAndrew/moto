@@ -80,7 +80,7 @@ switch ($state) {
         } else {
             echo "<CENTER><h2> Hey ".$myusername." you got your password wrong.<BR>";
             echo "Best put the beer down and have another go? </H2>";
-            readfile ('login-table.html');
+            readfile('login-table.html');
             
         }
         //echo "DEBUG ** made it int to the pasword checking loop<BR>";
@@ -91,7 +91,7 @@ switch ($state) {
        		include 'admin.php'; 
        	} else {
             echo "<CENTER><h2> Hey ".$myusername." you got your admin password wrong.<BR></H2> ";
-            readfile ('login-table.html');       
+            readfile('login-table.html');          
         }      
         break;
     
