@@ -2,3 +2,4 @@
 error_log
 *.ics
 db/seed-data/motogp-riders-2025.html
+local_error_log.log

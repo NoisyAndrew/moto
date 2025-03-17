@@ -4,7 +4,7 @@
 <head>
     <title>MotoGP bidding 2025</title>
     <link rel='shortcut icon' type='image/x-icon' href='cog.ico'></link>
-    <link rel="stylesheet" href="main.css" type="text/css" media="screen"></link>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"></link>
     <meta http-equiv='pragma' content='no-cache' />
     <meta http-equiv='expires' content='-1' />
     <meta http-equiv='cache-control' content='no-cache'>
@@ -13,7 +13,7 @@
 <body>
     <center>
         <h2>Welcome MotoGP bidding 2025</h2>
-        <center><img src="/images/dannyped.png" alt="Zoooomm.."></center>
+        <center><img src="/images/DannyPed.png" alt="Zoooomm.."></center>
         <br>
 
         <?php
