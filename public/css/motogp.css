@@ -1,0 +1,9 @@
+/* custom styles for the app */
+
+main.gp-narrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 510px;
+}

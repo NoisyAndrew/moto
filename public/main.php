@@ -2,7 +2,7 @@
 <html lang="en-US">
 <HTML><HEAD><TITLE>MotoGP bidding 2025</TITLE>
 <link rel='shortcut icon' type='image/x-icon' href='cog.ico'></link>
-<LINK REL='STYLESHEET' HREF='main.css' TYPE='text/css' MEDIA='screen'></link> 
+<LINK REL='STYLESHEET' HREF='/css/main.css' TYPE='text/css' MEDIA='screen'></link> 
 <meta http-equiv='pragma' content='no-cache' />  
 <meta http-equiv='expires' content='-1' />
 <meta http-equiv='CACHE-CONTROL' content='NO-CACHE'>
@@ -80,7 +80,7 @@ switch ($state) {
         } else {
             echo "<CENTER><h2> Hey ".$myusername." you got your password wrong.<BR>";
             echo "Best put the beer down and have another go? </H2>";
-            include 'login-table.php';
+            readfile('login-table.html');
             
         }
         //echo "DEBUG ** made it int to the pasword checking loop<BR>";
@@ -91,7 +91,7 @@ switch ($state) {
        		include 'admin.php'; 
        	} else {
             echo "<CENTER><h2> Hey ".$myusername." you got your admin password wrong.<BR></H2> ";
-            include 'login-table.php';            
+            readfile('login-table.html');          
         }      
         break;
     
